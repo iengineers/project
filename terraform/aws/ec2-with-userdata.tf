@@ -15,7 +15,7 @@ resource "aws_instance" "test-instances" {
                 #! /bin/bash
                 sudo apt-get update
                 sudo git clone http://github.com/iengineers/project
-                sudo chmod -R 775 labs
+                sudo chmod -R 775 project
                 sudo project/cloud/setup-user.sh
         EOF
 
